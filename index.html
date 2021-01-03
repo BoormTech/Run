@@ -44,7 +44,6 @@
             <dev id="best?"></dev><dev id="best"></dev>m
         </h2><br>
     <canvas class="hidden" id="canvas" width="640" height="480"></canvas><br>
-    <button onmousedown="player.keyPress()" width="300" height="100">Jump<button>
     </center>
     <script>
         var canvas = document.getElementById("canvas");
@@ -210,7 +209,13 @@
             }
         };
         window.addEventListener("keypress", function(keyInfo) { player.keyPress(keyInfo); }, false);
+        function checktouch() {
+            if(document.getElementById("canvas").mousedown()) {
+                player.keyPress();
+            }
+        }
         function tick() {
+            checktouch();
             player.tick();
             world.tick();
             world.draw();
