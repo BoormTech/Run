@@ -109,7 +109,7 @@
                 if(biggestJumpableHeight > this.highestFloor) {
                     biggestJumpableHeight = this.highestFloor;
                 }
-                var lowest = player.height + 10;
+                var lowest = player.height + 40;
                 var randomHeight = Math.floor(Math.random() * biggestJumpableHeight) + lowest;
                 var leftValue = (previousTile.x + previousTile.width);
                 var next = new floor(leftValue, randomHeight);
@@ -250,5 +250,5 @@
              window.setTimeout("start();", 2000);
         }
     </script>
-Dev3</body>
+Dev4</body>
 </html>
