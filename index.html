@@ -43,8 +43,7 @@
             Distance Travelled: <dev id="score"></dev>m<br>
             <dev id="best?"></dev><dev id="best"></dev>m
         </h2><br>
-<button onclick="player.keyPress()" style="background-color: none; border: 0px solid black;">
-    <canvas class="hidden" id="canvas" width="640" height="480"></canvas></button><br>
+    <canvas ontouchstart="player.keyPress();" class="hidden" id="canvas" width="640" height="480"></canvas><br>
     </center>
     <script>
         var canvas = document.getElementById("canvas");
