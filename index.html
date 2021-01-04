@@ -104,7 +104,7 @@
                     return;
                 }
                 var previousTile = this.floorTiles[this.floorTiles.length - 1];
-                var biggestJumpable = previousTile.height + player.height * 3.5;
+                var biggestJumpable = previousTile.height + player.height * 3;
                 var biggestJumpableHeight = biggestJumpable - 10;
                 if(biggestJumpableHeight > this.highestFloor) {
                     biggestJumpableHeight = this.highestFloor;
@@ -250,5 +250,5 @@
              window.setTimeout("start();", 2000);
         }
     </script>
-Dev4</body>
+</body>
 </html>
