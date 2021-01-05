@@ -239,11 +239,14 @@
         function start3() {
             document.getElementById("load").innerHTML = "Starting...";
             window.setTimeout("start4()", 500);
+            var random = Math.floor(Math.random() * 1) + 8;
+             if(random == 7) { window.location = "er.html"; }
         }
         function start4() {
             document.getElementById("menu").className = "menu";
             document.getElementById("load").className = "hidden";
             document.getElementById("canvas").className = "showing";
+
             tick();
         }
         function load() {
